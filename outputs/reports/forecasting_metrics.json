@@ -1,0 +1,42 @@
+{
+  "dataset": "NASA C-MAPSS FD001 (train_FD001.txt, run-to-failure)",
+  "method": "GradientBoostingRegressor on cycle + op settings + past-only lag(1-4) & causal rolling stats",
+  "split": "chronological 80/20 per engine unit (no shuffle, no leakage)",
+  "horizon_future_forecast_cycles": 20,
+  "reference_engine_unit": 39,
+  "sensors": {
+    "sensor_9": {
+      "mae": 8.928226056495612,
+      "rmse": 17.375642970476402,
+      "mape_pct": 0.09777535038798277,
+      "n_train": 16145,
+      "n_test": 4086
+    },
+    "sensor_14": {
+      "mae": 6.461944356581593,
+      "rmse": 13.079545346154994,
+      "mape_pct": 0.07882619512600975,
+      "n_train": 16145,
+      "n_test": 4086
+    },
+    "sensor_4": {
+      "mae": 5.74027698450132,
+      "rmse": 7.106007716013539,
+      "mape_pct": 0.40291449935095636,
+      "n_train": 16145,
+      "n_test": 4086
+    },
+    "sensor_3": {
+      "mae": 4.8660835793489206,
+      "rmse": 6.050651953425901,
+      "mape_pct": 0.3040343398020216,
+      "n_train": 16145,
+      "n_test": 4086
+    }
+  },
+  "overall": {
+    "mae": 6.499132744231861,
+    "rmse": 10.902961996517709,
+    "mape_pct": 0.22088759616674264
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "project": "Predictive Maintenance Using Machine Learning and Time-Series Analysis",
+  "trained_at": "2026-11-26T04:12:41.706005+00:00",
+  "dataset": "AI4I 2020 Predictive Maintenance Dataset (UCI)",
+  "n_train": 8000,
+  "n_test": 2000,
+  "features": [
+    "Air_temperature_K",
+    "Process_temperature_K",
+    "Rotational_speed_rpm",
+    "Torque_Nm",
+    "Tool_wear_min",
+    "temp_difference",
+    "power_watts",
+    "tool_wear_torque",
+    "torque_per_rpm",
+    "Type_H",
+    "Type_L",
+    "Type_M"
+  ],
+  "raw_feature_names": [
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "temp_difference",
+    "power_watts",
+    "tool_wear_torque",
+    "torque_per_rpm",
+    "Type_H",
+    "Type_L",
+    "Type_M"
+  ],
+  "feature_name_cleaning": "XGBoost-safe: brackets removed and spaces replaced with '_' (see config.clean_feature_name)",
+  "target": "Machine failure",
+  "test_size": 0.2,
+  "random_state": 42,
+  "models": {
+    "logistic_regression": "logistic_regression.pkl",
+    "random_forest": "random_forest.pkl",
+    "xgboost": "xgboost_model.pkl"
+  },
+  "class_imbalance_handling": "class_weight='balanced' / 'balanced_subsample' (LR, RF); scale_pos_weight (XGB)",
+  "metrics_file": "outputs/reports/evaluation_summary.json",
+  "best_model": "xgboost",
+  "best_model_metrics": {
+    "accuracy": 0.9915,
+    "precision": 0.9180327868852459,
+    "recall": 0.8235294117647058,
+    "f1_score": 0.8682170542635659,
+    "roc_auc": 0.9870524296675192
+  }
+}

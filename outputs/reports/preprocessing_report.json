@@ -1,0 +1,64 @@
+{
+  "raw_rows": 10000,
+  "raw_columns": 14,
+  "missing_values_total": 0,
+  "duplicates_removed": 0,
+  "outliers": [
+    {
+      "column": "Air temperature [K]",
+      "q1": 298.3,
+      "q3": 301.5,
+      "iqr": 3.2,
+      "lower_bound": 293.5,
+      "upper_bound": 306.3,
+      "n_outliers": 0,
+      "outlier_pct": 0.0
+    },
+    {
+      "column": "Process temperature [K]",
+      "q1": 308.8,
+      "q3": 311.1,
+      "iqr": 2.3,
+      "lower_bound": 305.35,
+      "upper_bound": 314.55,
+      "n_outliers": 0,
+      "outlier_pct": 0.0
+    },
+    {
+      "column": "Rotational speed [rpm]",
+      "q1": 1423.0,
+      "q3": 1612.0,
+      "iqr": 189.0,
+      "lower_bound": 1139.5,
+      "upper_bound": 1895.5,
+      "n_outliers": 418,
+      "outlier_pct": 4.18
+    },
+    {
+      "column": "Torque [Nm]",
+      "q1": 33.2,
+      "q3": 46.8,
+      "iqr": 13.6,
+      "lower_bound": 12.8,
+      "upper_bound": 67.2,
+      "n_outliers": 69,
+      "outlier_pct": 0.69
+    },
+    {
+      "column": "Tool wear [min]",
+      "q1": 53.0,
+      "q3": 162.0,
+      "iqr": 109.0,
+      "lower_bound": -110.5,
+      "upper_bound": 325.5,
+      "n_outliers": 0,
+      "outlier_pct": 0.0
+    }
+  ],
+  "clean_rows": 10000,
+  "failure_rate": 0.0339,
+  "target_distribution": {
+    "0": 9661,
+    "1": 339
+  }
+}

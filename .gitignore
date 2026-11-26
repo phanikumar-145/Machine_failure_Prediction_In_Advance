@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# NOTE: models/ and outputs/ are intentionally committed - this archive ships
+# the already-trained models and the generated reports/visualisations.
+
+# Local caches
+.streamlit/secrets.toml
